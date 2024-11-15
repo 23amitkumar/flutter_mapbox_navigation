@@ -54,6 +54,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace 'com.eopeter.fluttermapboxnavigation'
     compileSdkVersion 33
 
     sourceSets {
@@ -87,15 +88,15 @@ android {
 
 dependencies {
     // Mapbox Navigation SDK
+    implementation 'com.google.android.material:material:1.9.0'
+
     implementation "com.mapbox.navigation:copilot:2.16.0"
     implementation "com.mapbox.navigation:ui-app:2.16.0"
     implementation "com.mapbox.navigation:ui-dropin:2.16.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.jakewharton.timber:timber:4.7.1'
     implementation 'com.google.code.gson:gson:2.8.9'
-
     implementation "androidx.core:core-ktx:1.9.0"
-    implementation "com.google.android.material:material:1.8.0"
     implementation "androidx.appcompat:appcompat:1.6.1"
     implementation "androidx.cardview:cardview:1.0.0"
     implementation "androidx.constraintlayout:constraintlayout:2.1.4"
